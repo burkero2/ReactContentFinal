@@ -1,6 +1,6 @@
 import React from "react";
 
-class StatefulGreeting extends React.Component{
+class EventBinding extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -24,7 +24,7 @@ class StatefulGreeting extends React.Component{
     render(){
         return ( //return method only wants to return 1 element e.g. a div.
             <div>
-                <h5>3. Stateful Greeting</h5>
+                <h5>8. Events Binding</h5>
                 <h1>{this.state.introduction} {this.props.name}</h1>
                 <button onClick = {() => this.handleClick()}>{this.state.buttonText}</button> {/* Step 1: Set the click action */}
                 <hr></hr>
@@ -34,4 +34,4 @@ class StatefulGreeting extends React.Component{
     }
 }
 
-export default StatefulGreeting;
+export default EventBinding;
