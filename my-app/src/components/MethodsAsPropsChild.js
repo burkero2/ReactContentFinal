@@ -1,6 +1,8 @@
 import React from 'react'
 
 function MethodsAsPropsChild(props) {
+
+
     return (
         <div>
             {
@@ -12,10 +14,12 @@ function MethodsAsPropsChild(props) {
                                 <li>Complete your profile</li>
                                 <li>Subscribe to the newsletter</li>
                             </ol>
+                            <button onClick = {props.handleSignOut}>Sign Out</button>
                         </div>
                     ) : (
                         <div>
                             <h1>Please Sign In</h1>
+                            <button onClick = {props.handleSignIn}>Sign In</button>
                         </div>
                     )
                 }
